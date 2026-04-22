@@ -55,6 +55,32 @@ export default function HomeSection() {
         </div>
       </motion.div>
 
+      {/* Media Section: Image and Video */}
+      <div className="grid md:grid-cols-2 gap-8">
+        <motion.div variants={itemVariants} className="rounded-3xl overflow-hidden border border-slate-700/50 shadow-2xl relative aspect-video group">
+          <img 
+            src="https://cdn2.unrealengine.com/rocket-league-free-to-play-1920x1080-60b701297588.jpg" 
+            alt="Rocket League Gameplay" 
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent flex items-end p-6">
+            <h3 className="text-xl font-bold text-white text-shadow">Visuales del Juego</h3>
+          </div>
+        </motion.div>
+        
+        <motion.div variants={itemVariants} className="rounded-3xl overflow-hidden border border-slate-700/50 shadow-2xl relative aspect-video bg-slate-900">
+          <iframe 
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/SgSX3gOrj60?autoplay=0" 
+            title="Rocket League Trailer" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </motion.div>
+      </div>
+
       {/* Grid Features */}
       <div className="grid md:grid-cols-3 gap-6">
         
