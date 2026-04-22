@@ -59,7 +59,7 @@ export default function HomeSection() {
       <div className="grid md:grid-cols-2 gap-8">
         <motion.div variants={itemVariants} className="rounded-3xl overflow-hidden border border-slate-700/50 shadow-2xl relative aspect-video group">
           <img 
-            src="https://cdn2.unrealengine.com/rocket-league-free-to-play-1920x1080-60b701297588.jpg" 
+            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/252950/header.jpg" 
             alt="Rocket League Gameplay" 
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
